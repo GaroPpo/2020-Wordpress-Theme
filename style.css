@@ -1,0 +1,15 @@
+/*
+Theme Name:  m c m x c v i i x
+Theme URI:   https://ericliputra.xyz
+Author:      Eric Liputra
+Author URI:  https://ericliputra.xyz
+Description: EricLiputra.XYZ Late 2017 Wordpress Theme.
+Version:     1.0
+License:     GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Tags:        Dark, Responsive, Personal
+Text Domain: read
+*/
+
+@import url("resource/style/ericliputra.css");
+@import url("resource/style/responsive.css");

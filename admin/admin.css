@@ -1,0 +1,107 @@
+.rm_wrap{
+  width: 760px;
+}
+.rm_section{
+  border: 1px solid #DDD;
+  border-bottom: 0;
+  background: #F9F9F9;
+}
+.rm_opts {
+  margin-top: 50px;
+}
+.rm_opts label{
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  float: left;
+  cursor: context-menu;
+  width: 200px;
+}
+.rm_opts small{
+  display: block;
+  float: right;
+  width: 200px;
+  color: #999;
+}
+.rm_input {
+  border-bottom: 1px solid #DDD;
+  border-top: 1px solid #FFF;
+  padding: 30px 10px;
+}
+/* Input Field */
+.rm_opts input[type="text"],
+.rm_opts select{
+  background: #F3F3F3;
+  color: #333;
+  font-size: 12px;
+  line-height: 1em;
+  padding: 4px;
+  width: 280px;
+}
+.rm_opts p.submit input {
+  background-color: #008CBA;
+  border: none;
+  color: #FFF;
+  font-weight: bold;
+  float: right;
+  padding: 8px;
+  text-transform: uppercase;
+}
+/* Input Field Active */
+.rm_input input:focus,
+.rm_input textarea:focus{
+  background: #FFF;
+}
+.rm_input textarea{
+  width:280px;
+  height:175px;
+  font-size:12px;
+  padding:4px;
+  color:#333;
+  line-height:1.5em;
+  background:#f3f3f3;
+}
+.rm_title{
+  border-bottom: 1px solid #DDD;
+  background: #EEE;
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+}
+.rm_title h3 {
+  color: #232323;
+  float: left;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+.rm_title span.submit{
+  float: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+}
+.rm_title span.submit input {
+  background-color: #008CBA;
+  border: none;
+  color: #FFF;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.clearfix{
+  clear:both;
+}
+.rm_table th,
+.rm_table td{
+  border: 1px solid #BBB;
+  padding: 10px;
+  text-align: center;
+}
+.rm_table th,
+.rm_table td.feature {
+  border-color:#888;
+}

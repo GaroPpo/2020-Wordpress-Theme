@@ -1,0 +1,56 @@
+@media only screen and (max-width: 767px){
+  #Container {
+    padding: 15px;
+  }
+  #FrontPage #Header {
+    text-align: left;
+    margin: 10px;
+    margin-bottom: 50px;
+  }
+  #FrontPage #Header h3 {
+    font-size: 11px;
+  }
+  #FrontPage #Menu {
+    text-align: left;
+    margin: 10px;
+  }
+  #FrontPage #Menu ul {
+    display: grid;
+  }
+  #FrontPage #Menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #FrontPage #Menu ul li i {
+    display: inline-block;
+  }
+  #Menu ul li a::before {
+    content: '\00bb ';
+  }
+  #IndexFooter {
+    display: block;
+  }
+  .Page #Content .BlogPost .CategoryPost span {
+    display: inline-block;
+  }
+  .Page #Content .BlogPost .CategoryPost i {
+    display: none;
+  }
+  .Page #Content .BlogPost .CategoryPost a {
+    display: block;
+  }
+  #Single-Post p {
+    font-size: 12px;
+  }
+  #Single-Post img {
+    max-width: 100%;
+    width: auto;
+  }
+  .Comment textarea {
+    width: 100%;
+  }
+  #IndexFooter .All-Rights,
+  #Footer .All-Rights {
+    display: block;
+  }
+}
