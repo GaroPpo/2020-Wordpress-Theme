@@ -2,11 +2,10 @@
 =================================================*/
 body {
   max-width: 50em !important;
-  margin: 3em auto 2em auto;
-  background-color: #FFF;
+  margin: auto;
+  background-color:#FFF;
   color: #000;
   font-family: helvetica, arial, clean, sans-serif;
-  font-size: 12px;
 }
 a {
   color: rgba(0,0,0,1);
@@ -16,6 +15,19 @@ a {
 }
 a:hover {
   color: rgba(255,0,0,1);
+  text-decoration: none;
+}
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+img {
+  border-radius: 5px;
+  display: block;
+  height: auto;
+  max-width: 100%;  
 }
 h1,
 h3 {
@@ -27,9 +39,15 @@ h2 {
   margin: 0;
   padding: 0;
 }
+span {
+  font-size: 12px;
+}
 blockquote {
   font-weight: bold;
   letter-spacing: -1px;
+  text-align: center;
+}
+blockquote p {
   text-align: center;
 }
 blockquote cite {
@@ -38,122 +56,118 @@ blockquote cite {
   font-style: italic;
   text-transform: uppercase;
 }
-#Header h1 a {
-  font-size: 16px;
-  color: #A00;
-  text-transform: capitalize;
+#Menu-Utama {
+  margin-bottom: 75px;
 }
-#Header h3 {
-  letter-spacing: 5px;
-  margin-bottom: 15px;
+.navbar-brand-name {
+  font-weight: 600;
+  font-size: 1.25rem;
 }
-#Header span {
-  font-size: 10px;
-  line-height: 10px;
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-light .navbar-nav .nav-link {
+  text-transform: uppercase;
 }
 #Content {
-  margin-top: 50px;
+  padding: .5rem 1rem;
 }
 #Footer {
   font-size: 12px;
   border-top: 4px solid #DDD;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 #Footer span {
   letter-spacing: 1px;
   padding-right: -1px;
   text-transform: capitalize;
 }
-.Clear {
-  clear: both;
-  display: none;
+#Footer .fa.fa-code {
+  font-weight: bolder;
+  position: relative;
+  top: -1px;
 }
-.SocialMedia ul {
+#Footer .fa.fa-heart {
+  color: #F00;
+}
+#Footer .SocialMedia {
+  margin-top: 20px;
+}
+#Footer .SocialMedia ul {
   display: inline-block;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
-.SocialMedia ul li {
+#Footer .SocialMedia ul li {
   float: left;
   font-size: 10px;
   padding-right: 15px;
 }
-.SocialMedia ul li:last-child {
+#Footer .SocialMedia ul li:last-child {
   padding-right: 0px;
 }
-.SocialMedia ul li a {
+#Footer .SocialMedia ul li a {
   color: rgba(0,0,0,.5);
 }
-.SocialMedia ul li a:hover {
+#Footer .SocialMedia ul li a:hover {
   color: rgba(0,0,0,1);
-}
-
-/* SCROLLBAR STYLE
-=================================================*/
-body::-webkit-scrollbar {
-  width: .75em;
-}
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  border-radius: 25px;
-  outline: 1px solid slategrey;
 }
 
 /* VENDOR STYLE
 =================================================*/
 .scrollUpButton {
- display: none;
- opacity: 0.6;
- position: fixed;
- bottom: 10px;
- right: 10px;
- display: none;
- background: #000;
- color: #FFF;
- font-size: 1.5em;
- text-decoration: none;
- padding: 5px 10px 5px 10px;
+  display: none;
+  opacity: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  background: #000;
+  color: #FFF;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
 }
 .sscrollUpButton:hover, .scrollUpButton:focus {
- outline: none;
- text-decoration: none;
- color: #FFF;
- opacity: 1;
+  outline: none;
+  text-decoration: none;
+  color: #F00;
+  opacity: 1;
 }
 
 /* PAGE STYLE
 =================================================*/
-.Page #Content .BlogPost .CategoryPost {
+.BlogPost .CategoryPost {
   margin-bottom: 50px;
 }
-.Page #Content .BlogPost .CategoryPost:last-child {
+.BlogPost .CategoryPost:last-child {
   margin-bottom: 0;
 }
-.Page #Content .BlogPost .CategoryPost h2 {
-  font-size: 14px;
+.BlogPost .CategoryPost h2 {
+  font-size: 16px;
   font-weight: bold;
 }
-.Page #Content .BlogPost .CategoryPost span {
+.BlogPost .CategoryPost span {
   color: #999;
 }
-.Page #Content .BlogPost .CategoryPost i {
+.BlogPost .CategoryPost i {
   font-style: normal;
 }
-.Page #Content .BlogPost .CategoryPost a {
+.BlogPost .CategoryPost a {
+  font-size: 14px;
   letter-spacing: 0px;
   text-transform: capitalize;
 }
-.Page #Content .BlogPost ul {
+.BlogPost ul {
   list-style: none;
   padding: 0;
 }
-.Page #Content .BlogPost ul li {
+.BlogPost ul li {
   margin-bottom: 10px;
 }
-.Page #Content .BlogPost ul li span {
+.BlogPost ul li span {
   font-family: Monaco, "Courier New", monospace;
 }
 
@@ -163,9 +177,6 @@ body::-webkit-scrollbar-thumb {
   text-align: left;
   text-transform: none;
 }
-#Single-Post p {
-  font-size: 14px;
-}
 #Single-Post img {
   display: block;
   height: auto;
@@ -174,17 +185,23 @@ body::-webkit-scrollbar-thumb {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-#Single-Post .Header h1 {
-  font-size: 14px;
+#Single-Post h1 {
+  font-size: 1.25em;
   font-weight: bold;
   margin-bottom: 5px;
 }
+#Single-Post h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
 #Single-Post .Entry-Meta {
   color: #999;
+  font-size: .75em;
   margin-bottom: 30px;
 }
 #Single-Post .Entry-Meta span {
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 300;
   margin-right: 10px;
 }
 #Single-Post .Entry-Meta span i {
@@ -195,36 +212,6 @@ body::-webkit-scrollbar-thumb {
   color: #FFF;
   display: inline-block;
   padding: 2px 8px;
-}
-#Single-Post .Header .Tags a::before {
-  content: '#';
-}
-#Single-Post .Featured-Image {
-  margin-bottom: 30px;
-}
-#Single-Post .Post-Content {
-  font-family: font-family: helvetica, arial, clean, sans-serif;
-  line-height: 2em;
-  text-align: justify;
-}
-#Single-Post .Social-Sharing {
-  margin-bottom: 20px;
-}
-#Single-Post .Social-Sharing ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#Single-Post .Social-Sharing ul li {
-  position: relative;
-  display: inline-block;
-  padding-right: 5px;
-}
-#Single-Post .Social-Sharing ul li:last-child {
-  padding-right: 0;
-}
-#Single-Post .Social-Sharing ul li a {
-  font-size: 2em;
 }
 #Single-Post .Tags {
   margin-bottom: 20px;
@@ -256,16 +243,34 @@ body::-webkit-scrollbar-thumb {
   background-color: #000;
   padding: 5px;
 }
+#Single-Post .Featured-Image {
+  margin-bottom: 50px;
+}
+#Single-Post .Social-Sharing {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Single-Post .Social-Sharing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#Single-Post .Social-Sharing ul li {
+  position: relative;
+  display: inline-block;
+  padding-right: 5px;
+}
+#Single-Post .Social-Sharing ul li:last-child {
+  padding-right: 0;
+}
+#Single-Post .Social-Sharing ul li a {
+  font-size: 1.5em;
+}
 #Single-Post .Related-Post {
   margin-bottom: 20px;
 }
-#Single-Post .Related-Post h3 {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-#Single-Post .Related-Post span {
-  color: #999;
-  font-family: Monaco, "Courier New", monospace;
+#Single-Post .Related-Post a {
+  font-size:14px;
 }
 #Single-Post .Related-Post ul {
   list-style: none;
@@ -327,12 +332,9 @@ body::-webkit-scrollbar-thumb {
 }
 .Comment-Form input {
   height: 2.5em;
-  vertical-align: middle;
 }
 .Comment-Form textarea {
-  display: block;
   overflow: auto;
-  vertical-align: middle;
   padding-right: 5px;;
 }
 

@@ -30,27 +30,11 @@
   #IndexFooter {
     display: block;
   }
-  .Page #Content .BlogPost .CategoryPost span {
-    display: inline-block;
-  }
-  .Page #Content .BlogPost .CategoryPost i {
-    display: none;
-  }
-  .Page #Content .BlogPost .CategoryPost a {
-    display: block;
-  }
-  #Single-Post p {
-    font-size: 12px;
-  }
   #Single-Post img {
     max-width: 100%;
     width: auto;
   }
   .Comment textarea {
     width: 100%;
-  }
-  #IndexFooter .All-Rights,
-  #Footer .All-Rights {
-    display: block;
   }
 }
